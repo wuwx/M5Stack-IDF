@@ -1,16 +1,10 @@
-To use as a M5Stack component of ESP-IDF
+iTo use as a M5Stack component of ESP-IDF
 =================================================
 
 - Download and install [esp-idf](https://github.com/espressif/esp-idf)
-- Create blank idf project (from one of the examples)
-- in the project folder, create a folder called components and clone this repository inside
-
-    ```bash
-    mkdir -p components && \
-    cd components && \
-    git clone https://github.com/espressif/arduino-esp32.git arduino && \
-    cd .. && \
-    make menuconfig
+- Create template idf project
+  ```bash
+    git clone https://github.com/m5stack/M5Stack-IDF.git
   ```
 - ```make menuconfig``` has some Arduino options
     - "Autostart Arduino setup and loop on boot"
