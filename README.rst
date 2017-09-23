@@ -1,10 +1,6 @@
-# M5Stack ESP-IDF template app
+To use as a M5Stack component of ESP-IDF
+=================================================
 
-This is a template application to be used with `Espressif IoT Development Framework`_ (ESP-IDF). 
-
-Please check ESP-IDF docs for getting started instructions.
-
-# Using as ESP-IDF component
 - Download and install [esp-idf](https://github.com/espressif/esp-idf)
 - Create blank idf project (from one of the examples)
 - in the project folder, create a folder called components and clone this repository inside
