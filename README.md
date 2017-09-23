@@ -1,4 +1,4 @@
-iTo use as a M5Stack component of ESP-IDF
+To use as a M5Stack component of ESP-IDF
 =================================================
 
 - Download and install [esp-idf](https://github.com/espressif/esp-idf)
@@ -10,22 +10,21 @@ iTo use as a M5Stack component of ESP-IDF
     - "Autostart Arduino setup and loop on boot"
         - If you enable this options, your main.cpp should be formated like any other sketch
 
-  ```arduino
-  //file: main.cpp
-  #include <M5Stack.h>
+          ```arduino
+          //file: main.cpp
+          #include <M5Stack.h>
 
-  void setup(){
+          void setup(){
 
-    M5.begin();
-    M5.Lcd.printf("hello world");
-  }
+            M5.begin();
+            M5.Lcd.printf("hello world");
+          }
 
-  void loop() {
-    
-    M5.update();
-  }
+          void loop() {
 
-  ```
+            M5.update();
+          }
+          ```
 
         - Else you need to implement ```app_main()``` and call ```initArduino();``` in it.
 
