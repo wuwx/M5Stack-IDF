@@ -1,5 +1,4 @@
-M5Stack ESP-IDF template app
-====================
+# M5Stack ESP-IDF template app
 
 This is a template application to be used with `Espressif IoT Development Framework`_ (ESP-IDF). 
 
