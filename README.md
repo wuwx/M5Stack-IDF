@@ -10,19 +10,22 @@ iTo use as a M5Stack component of ESP-IDF
     - "Autostart Arduino setup and loop on boot"
         - If you enable this options, your main.cpp should be formated like any other sketch
 
-          ```arduino
-          //file: main.cpp
-          #include "Arduino.h"
+  ```arduino
+  //file: main.cpp
+  #include <M5Stack.h>
 
-          void setup(){
-            Serial.begin(115200);
-          }
+  void setup(){
 
-          void loop(){
-            Serial.println("loop");
-            delay(1000);
-          }
-          ```
+    M5.begin();
+    M5.Lcd.printf("hello world");
+  }
+
+  void loop() {
+    
+    M5.update();
+  }
+
+  ```
 
         - Else you need to implement ```app_main()``` and call ```initArduino();``` in it.
 
