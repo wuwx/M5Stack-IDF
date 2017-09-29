@@ -33,14 +33,13 @@ To use as a M5Stack component of ESP-IDF
 
       ```arduino
       //file: main.cpp
-      #include "Arduino.h"
+      #include <M5Stack.h>
 
       extern "C" void app_main()
       {
           initArduino();
-          pinMode(4, OUTPUT);
-          digitalWrite(4, HIGH);
-          //do your own thing
+          M5.begin();
+          M5.Lcd.println("hello world!");
       }
       ```
   - "Disable mutex locks for HAL"
